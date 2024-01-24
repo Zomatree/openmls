@@ -405,4 +405,9 @@ impl ApplicationMessage {
     pub fn into_bytes(self) -> Vec<u8> {
         self.bytes
     }
+
+    /// Returns the inner bytes as a byte slice
+    pub fn as_bytes(&self) -> &[u8] {
+        &self.bytes
+    }
 }
